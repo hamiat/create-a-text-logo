@@ -1,0 +1,76 @@
+:root {
+  --base: #89cff0;
+  --size: 100px;
+  --blur: 0px;
+  --border: 2px;
+  --bordercolor: #ffffff;
+  --rotate: 0deg;
+  --secondary: rgb(160, 115, 0);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Cutive+Mono&display=swap');
+html {
+  height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  color: var(--secondary);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2em;
+}
+
+.text-input {
+    margin: 2em 0;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  gap: 0.4em;
+}
+
+label,
+input {
+  max-width: 80%;
+  font-family: 'Cutive Mono', monospace;
+  color: var(--secondary);
+}
+
+img {
+    width: var(--size);
+    filter: blur(var(--blur));
+    transform: rotate(var(--rotate));
+  height: 55vh;
+  box-shadow: 8px 8px 0px 0px #4d5f68;
+  margin-bottom: 2em;
+  background-color: var(--base);
+
+}
+
+.text-written {
+    font-size: var(--size);
+    color: var(--base);
+    filter: blur(var(--blur));
+    transform: rotate(var(--rotate));
+    text-shadow: var(--border) 2px var(--bordercolor);
+    
+}
+
+.hl {
+    color: var(--base);
+}
+
+footer {
+  font-size: 0.7em;
+  font-family: 'Cutive Mono', monospace;
+  color: var(--secondary);
+}

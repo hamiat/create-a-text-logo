@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <h1>Create a text <span class="hl">logo</span></h1>
+    <section class="text-input">
+        <label for="writing">Write something</label>
+        <input id="writing" type="text" placeholder="type here...">
+        <button  type="submit">Done</button>
+    </section>
+    <section class="controls">
+        <label for="size">Size:</label>
+        <input id="size" type="range" name="size" min="40" max="140" value="100" data-sizing="px" data-cool="bram">
+        <!-- you can add your own data-set, tex data-cool="bram", if you console.log(this.dataset) you will get the all data attributes as objects -->
+    
+        <label for="blur">Blur:</label>
+        <input id="blur" type="range" name="blur" min="0" max="5" value="0" data-sizing="px" >
+
+        <label for="border">Border:</label>
+        <input id="border" type="range" name="border" min="0" max="5" value="2" data-sizing="px" >
+    
+        <label for="base">Color</label>
+        <input id="base" type="color" name="base" value="#89CFF0">
+    
+        <label for="bordercolor"> Text shadow</label>
+        <input id="bordercolor" type="color" name="bordercolor" value="#ffffff">
+
+        <label for="rotate">Rotate </label>
+        <input id="rotate" type="range" min="0" max="360" value="0" name="rotate" data-sizing="deg">
+
+    </section>
+  
+    <section>
+        <p class="text-written"></p>
+    </section>
+</main>
+
+<!-- <img src="eggs.jpg" alt="Three eggs lined up in egg bowls, the first one is unpeeled, the second halfways peeled and the third ready to eat."> 
+
+    <footer><p>Picture by <a href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pawel Czerwinski</a> on <a href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </p></footer>-->
+    
+</body>
+<script src="script.js"></script>
+</html>
