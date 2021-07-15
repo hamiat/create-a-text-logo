@@ -9,12 +9,12 @@
   </head>
   <body>
     <main class="grid">
-      <h1>Create a text <span class="hl">logo</span></h1>
+      <h1 id="title">Create a text <span class="hl">logo</span></h1>
       <p id="sample">Hover for sample</p>
       <section class="text-input">
-        <label for="writing">Write something</label>
+        <label id="writing-label" for="writing">Write something</label>
         <input id="writing" type="text" placeholder="type here..." />
-        <button type="submit">Done</button>
+        <button id="text-btn" type="submit">Done</button>
       </section>
       <section class="controls">
         <div class="inputs">
@@ -94,6 +94,8 @@
           alt="A sample text logo that says, like this one!"
         />
         <p class="text-written"></p>
+        <button id="results-btn" type="submit">Click to see result</button>
+        <button id="return-btn" type="submit">Return</button>
       </section>
     </main>
   </body>

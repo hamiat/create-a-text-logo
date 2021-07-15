@@ -120,6 +120,20 @@ button {
   font-weight: 600;
 }
 
+#results-btn{
+  grid-column: 9 / span 1;
+  grid-row: 3;
+ width: 50%;
+ margin-top: 5em;
+}
+#return-btn{
+  grid-column: 9 / span 1;
+  grid-row: 4;
+ width: 50%;
+ display: none;
+ margin-top: 20em;
+}
+
 input {
   cursor: pointer;
 }
