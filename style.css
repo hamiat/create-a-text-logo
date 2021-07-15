@@ -8,7 +8,7 @@
   --secondary: rgb(160, 115, 0);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Cutive+Mono&family=Caveat+Brush&display=swap");
 html {
   height: 100vh;
   overflow-x: hidden;
@@ -42,10 +42,12 @@ h1 {
   border-radius: 50px;
   max-width: 10ch;
   padding: 1em;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--secondary);
   cursor: pointer;
   transition: all 0.5s;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 1.2em;
 }
 
 #sample:hover {
@@ -114,8 +116,8 @@ h1 {
 button {
   margin-top: 1em;
   cursor: pointer;
-  color: var(--base);
-  border: 1px solid #313131;
+  color: #708aa3;
+  border: 1px solid #708aa3;
   padding: 0.3em;
   font-weight: 600;
 }
@@ -136,6 +138,7 @@ button {
 
 input {
   cursor: pointer;
+  border: 1px solid #708aa3;
 }
 
 /* phone style*/
