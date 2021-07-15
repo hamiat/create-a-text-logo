@@ -13,7 +13,6 @@ const samplePic = document.querySelector("#sample-pic");
 const title = document.querySelector("#title");
 const writeSomethingLabel = document.querySelector("#writing-label");
 
-
 function handleUpdate() {
   const suffix = this.dataset.sizing || "";
   //or nothing for elements that dont have sizing dataset
@@ -31,9 +30,9 @@ function handleTextInput(e) {
 
 function showResult(e) {
   e.preventDefault();
-  inputs.forEach((item) => item.style.display = "none")
-  labels.forEach((thing) => thing.style.display = "none")
-  labels.forEach((thing) => thing.style.display = "none")
+  inputs.forEach((item) => (item.style.display = "none"));
+  labels.forEach((thing) => (thing.style.display = "none"));
+  labels.forEach((thing) => (thing.style.display = "none"));
   inputFieldSection.style.display = "none";
   returnBtn.style.display = "grid";
   doneBtn.style.display = "none";
@@ -41,11 +40,10 @@ function showResult(e) {
   sample.style.display = "none";
 }
 
-
 function enterKey(e) {
-  if (event.key === "Enter") {
+  if (e.key === "Enter") {
     e.preventDefault();
-    btn.click();
+    textBtn.click();
   }
 }
 
@@ -57,9 +55,9 @@ function hideSample() {
 }
 
 function returnPanel(e) {
-    e.preventDefault();
-    inputs.forEach((item) => item.style.display = "flex")
-  labels.forEach((thing) => thing.style.display = "flex")
+  e.preventDefault();
+  inputs.forEach((item) => (item.style.display = "flex"));
+  labels.forEach((thing) => (thing.style.display = "flex"));
   returnBtn.style.display = "none";
   sample.style.display = "grid";
   inputFieldSection.style.display = "block";
@@ -67,7 +65,6 @@ function returnPanel(e) {
   writeSomethingLabel.style.display = "none";
   title.style.display = "grid";
   title.style.width = "100%";
-
 }
 
 inputs.forEach((input) => input.addEventListener("change", handleUpdate));
