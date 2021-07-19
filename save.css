@@ -1,0 +1,191 @@
+:root {
+    --base: #89cff0;
+    --size: 100px;
+    --blur: 0px;
+    --border: 2px;
+    --bordercolor: #ffffff;
+    --rotate: 0deg;
+    --secondary: rgb(160, 115, 0);
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Cutive+Mono&family=Caveat+Brush&display=swap");
+  html {
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 60px auto;
+  
+  
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 60px auto;
+  }
+  
+  header {
+    grid-column: 1 / span 9;
+    grid-row: 1;
+    display: flex;
+  justify-content: center;
+  
+    padding: 1em;
+  
+  }
+  
+  
+  main {
+    grid-column: 1 / span 9;y
+    grid-row: 2;
+  }
+  h1 {
+    color: var(--secondary);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 2em;
+  
+  }
+  
+  .hl {
+    color: var(--base);
+  }
+  
+  
+  
+  #sample {
+   
+    max-width: 10ch;
+   margin: 2.5em 0 0  5em;
+   transform: rotate(35deg);
+    font-weight: 800;
+    color: var(--secondary);
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: "Cutive Mono", monospace;
+    font-size: 1.1em;
+    
+  }
+  
+  
+  #sample:hover {
+    color: var(--base);
+    transform: scale(1.1);
+    transform: rotate(35deg);
+  }
+  
+  .text-input {
+    grid-column: 1 / span 9;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-family: "Cutive Mono", monospace;
+    color: var(--secondary);
+    gap: 0.3em;
+  
+  }
+  
+  #text-btn {
+    width: 5em;
+  }
+  
+  .controls {
+    grid-column: 1 / span 9;
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    gap: 0.4em;
+    width: 100%;
+    color: var(--base);
+  }
+  
+  
+  .inputs {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: 0.5em;
+    font-family: "Cutive Mono", monospace;
+    color: var(--secondary);
+   
+  }
+  
+  .text-logo {
+    grid-column: 1 / span 9;
+    grid-row: 3;
+    display: grid;
+  }
+  
+ 
+  
+  .text-logo img {
+    width: 100%;
+    grid-column: 2 / span 7;
+    grid-row: 1;
+    display: none;
+  }
+  
+  button {
+    margin-top: 1em;
+    cursor: pointer;
+    color: #708aa3;
+    border: 1px solid #708aa3;
+    padding: 0.3em;
+    font-weight: 600;
+  }
+  
+  #results-btn {
+    grid-column: 9 / span 1 ;
+    grid-row: 2;
+    margin-top: 5em;
+    margin-right: 1em;
+    max-width: 10ch;
+  }
+  
+  #return-btn {
+    grid-column: 9 / span 1;
+    grid-row: 4;
+    width: 50%;
+    display: none;
+    margin-top: 20em;
+  }
+  
+  input.label  {
+    cursor: pointer;
+    border: 1px solid #708aa3;
+   
+      width: 100%;
+    
+    
+  }
+  
+  /* phone style*/
+  @media screen and (max-width: 620px) {
+    h1 {
+      flex-wrap: nowrap;
+    }
+  
+    main {
+      padding: 0 1em;
+    }
+  
+   
+    #sample {
+     display: none;
+    }
+  #results-btn, #return-btn {
+    width: 4em;
+    
+    
+  }
+  }

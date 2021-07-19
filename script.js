@@ -62,10 +62,12 @@ function returnPanel(e) {
   sample.style.display = "grid";
   inputFieldSection.style.display = "block";
   doneBtn.style.display = "grid";
-  writeSomethingLabel.style.display = "none";
-  title.style.display = "grid";
+ 
+  title.style.display = "block";
   title.style.width = "100%";
 }
+
+
 
 inputs.forEach((input) => input.addEventListener("change", handleUpdate));
 inputs.forEach((input) => input.addEventListener("mousemove", handleUpdate));
